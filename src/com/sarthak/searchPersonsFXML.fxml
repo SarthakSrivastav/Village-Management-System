@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:#c18d8b" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.SearchPersonsController">
+    <top>
+        <FlowPane fx:id="centerFlow" hgap="10" style="-fx-background-color:#955251" vgap="10" BorderPane.alignment="TOP_CENTER">
+            <Label text="Post Office: " textFill="WHITE">
+                <font>
+                    <Font name="Constantia Bold" size="16.0" />
+                </font>
+            </Label>
+            <TextField fx:id="post" prefHeight="36.0" prefWidth="192.0" promptText="in_lower_case">
+                <font>
+                    <Font name="Constantia Bold" size="16.0" />
+                </font>
+            </TextField>
+
+            <Label text="Village: " textFill="WHITE">
+                <font>
+                    <Font name="Constantia Bold" size="16.0" />
+                </font>
+            </Label>
+            <TextField fx:id="village" alignment="CENTER" prefHeight="34.0" prefWidth="192.0" promptText="in_lower_case">
+                <font>
+                    <Font name="Constantia Bold" size="16.0" />
+                </font>
+            </TextField>
+            <Label text="Family Head Name: " textFill="WHITE">
+                <font>
+                    <Font name="Constantia Bold" size="16.0" />
+                </font>
+            </Label>
+            <TextField fx:id="head" alignment="CENTER" prefHeight="34.0" prefWidth="192.0" promptText="in_lower_case">
+                <font>
+                    <Font name="Constantia Bold" size="16.0" />
+                </font>
+            </TextField>
+            <Label text="House No: " textFill="WHITE">
+                <font>
+                    <Font name="Constantia Bold" size="16.0" />
+                </font>
+            </Label>
+            <TextField fx:id="house" alignment="CENTER" prefHeight="34.0" prefWidth="192.0" promptText="in_lower_case">
+                <font>
+                    <Font name="Constantia Bold" size="16.0" />
+                </font>
+            </TextField>
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+        </FlowPane>
+    </top>
+    <left>
+        <VBox nodeOrientation="LEFT_TO_RIGHT" spacing="5.0">
+            <Label text="Search By: ">
+                <font>
+                    <Font name="Constantia Bold" size="25.0" />
+                </font>
+            </Label>
+            <Accordion nodeOrientation="LEFT_TO_RIGHT" prefHeight="294.0" prefWidth="247.0" style="-fx-background-color:#94b1d1">
+                <panes>
+                    <TitledPane prefWidth="279.0" text="Name">
+                        <TextField fx:id="name" onMouseClicked="#nameClicked" onMousePressed="#nameClicked" prefHeight="59.0" prefWidth="269.0" promptText="enter_name_in_lower_case" style="-fx-background-color:WHITE">
+                            <font>
+                                <Font name="Candara" size="19.0" />
+                            </font>
+                        </TextField>
+                        <font>
+                            <Font name="Courier New Bold" size="20.0" />
+                        </font>
+                    </TitledPane>
+                    <TitledPane text="Father Name">
+                        <!--                        <Label text="Enter Father Name:"/>-->
+                        <TextField fx:id="fname" onMouseClicked="#fnameClicked" onMousePressed="#fnameClicked" prefHeight="62.0" prefWidth="269.0" promptText="enter_father_name_in_lower_case" style="-fx-background-color:WHITE">
+                            <font>
+                                <Font name="Candara" size="20.0" />
+                            </font>
+                        </TextField>
+                        <font>
+                            <Font name="Courier New Bold" size="20.0" />
+                        </font>
+                    </TitledPane>
+                    <TitledPane text="Mother Name">
+                        <!--                        <Label text="Enter Mother Name:"/>-->
+                        <TextField fx:id="mname" onMouseClicked="#mnameClicked" promptText="enter_mother_name_in_lower_case" style="-fx-background-color:WHITE">
+                            <font>
+                                <Font name="Candara" size="20.0" />
+                            </font>
+                        </TextField>
+                        <font>
+                            <Font name="Courier New Bold" size="20.0" />
+                        </font>
+                    </TitledPane>
+                    <TitledPane text="Age">
+                        <VBox style="-fx-background-color:#c18d8b">
+                            <TextField fx:id="age" onMouseClicked="#ageClicked" prefHeight="31.0" prefWidth="271.0" promptText="enter_age" style="-fx-background-color:WHITE">
+                                <font>
+                                    <Font name="Courier New" size="20.0" />
+                                </font>
+                            </TextField>
+                            <RadioButton fx:id="rage1" text="less Then">
+                        <toggleGroup>
+                           <ToggleGroup fx:id="ageGroup" />
+                        </toggleGroup></RadioButton>
+                            <RadioButton fx:id="rage2" text="greater than" toggleGroup="$ageGroup" />
+                            <RadioButton fx:id="rage3" text="equal to" toggleGroup="$ageGroup" />
+                        </VBox>
+                        <font>
+                            <Font name="Courier New Bold" size="20.0" />
+                        </font>
+                    </TitledPane>
+                    <TitledPane text="Aadhar Number">
+                        <!--                        <Label text="Enter Aadhar Number:"/>-->
+                        <TextField fx:id="aadhar" onMouseClicked="#aadharClicked" promptText="12-digits" style="-fx-background-color:WHITE">
+                            <font>
+                                <Font name="Candara" size="20.0" />
+                            </font>
+                        </TextField>
+                        <font>
+                            <Font name="Courier New Bold" size="20.0" />
+                        </font>
+                    </TitledPane>
+                    <TitledPane text="Category">
+                        <!--                        <Label text="Enter Category:"/>-->
+                        <TextField fx:id="category" onMouseClicked="#categoryClicked" promptText="enter_category_in_lower_case" style="-fx-background-color:WHITE">
+                            <font>
+                                <Font name="Candara" size="20.0" />
+                            </font>
+                        </TextField>
+                        <font>
+                            <Font name="Courier New Bold" size="20.0" />
+                        </font>
+                    </TitledPane>
+
+                    <TitledPane text="Religion">
+                        <!--                        <Label text="Enter Religion:"/>-->
+                        <TextField fx:id="religion" onMouseClicked="#religionClicked" promptText="enter_religoin_in_lower_case" style="-fx-background-color:WHITE">
+                            <font>
+                                <Font name="Candara" size="20.0" />
+                            </font>
+                        </TextField>
+                        <font>
+                            <Font name="Courier New Bold" size="20.0" />
+                        </font>
+                    </TitledPane>
+                    <TitledPane text="Gender">
+                        <TextField fx:id="gender" onMouseClicked="#genderClicked" promptText="enter_gender_in_lower_case" style="-fx-background-color:WHITE">
+                            <font>
+                                <Font name="Candara" size="20.0" />
+                            </font>
+                        </TextField>
+                        <font>
+                            <Font name="Courier New Bold" size="20.0" />
+                        </font>
+                    </TitledPane>
+
+                    <TitledPane text="Phone Number">
+                        <!--                        <Label text="Enter Phonr Number:"/>-->
+                        <TextField fx:id="pno" onMouseClicked="#pnoClicked" promptText="10-digits" style="-fx-background-color:WHITE">
+                            <font>
+                                <Font name="Candara" size="20.0" />
+                            </font>
+                        </TextField>
+                        <font>
+                            <Font name="Courier New Bold" size="20.0" />
+                        </font>
+                    </TitledPane>
+                    <TitledPane text="House Number">
+                        <!--                        <Label text="Enter House Number:"/>-->
+                        <TextField fx:id="hno" onMouseClicked="#hnoClicked" promptText="enter_house_number" style="-fx-background-color:WHITE">
+                            <font>
+                                <Font name="Candara" size="20.0" />
+                            </font>
+                        </TextField>
+                        <font>
+                            <Font name="Courier New Bold" size="20.0" />
+                        </font>
+                    </TitledPane>
+                    <TitledPane text="Profession">
+                        <!--                        <Label text="Enter Profession:"/>-->
+                        <TextField fx:id="profession" onMouseClicked="#professionClicked" promptText="enter_profession_name_in_lower_case" style="-fx-background-color:WHITE">
+                            <font>
+                                <Font name="Candara" size="20.0" />
+                            </font>
+                        </TextField>
+                        <font>
+                            <Font name="Courier New Bold" size="20.0" />
+                        </font>
+                    </TitledPane>
+                </panes>
+            </Accordion>
+            <RadioButton fx:id="r1" text="Search In Whole Village">
+            <font>
+               <Font name="Georgia Bold" size="14.0" />
+            </font>
+            <toggleGroup>
+               <ToggleGroup fx:id="radioGroup" />
+            </toggleGroup></RadioButton>
+            <RadioButton fx:id="r2" text="Search In Main Member's Of The Village" toggleGroup="$radioGroup">
+            <font>
+               <Font name="Georgia Bold" size="14.0" />
+            </font></RadioButton>
+            <RadioButton fx:id="r3" text="Search In Main Member's Families Of The Village" toggleGroup="$radioGroup">
+            <font>
+               <Font name="Georgia Bold" size="14.0" />
+            </font></RadioButton>
+
+            <Button fx:id="search" onAction="#searchData" onMouseEntered="#enterSubmit" onMouseExited="#exitsubmit" prefHeight="25.0" prefWidth="380.0" style="-fx-background-color:#955251" text="Search" textFill="BLACK">
+                <font>
+                    <Font name="Ebrima Bold" size="18.0" />
+                </font>
+            </Button>
+            <opaqueInsets>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </opaqueInsets>
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </BorderPane.margin>
+        </VBox>
+    </left>
+    <center>
+        <TableView fx:id="showRearchResult" layoutX="14.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="700.0" style="-fx-border-color: black; -fx-background-color:#c9d4e8" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="c1" text="Name" />
+                <TableColumn fx:id="c2" text="Father Name" />
+                <TableColumn fx:id="c3" text="Mother Name" />
+                <TableColumn fx:id="c4" text="Age" />
+                <TableColumn fx:id="c5" text="Date Of Birth" />
+                <TableColumn fx:id="c6" text="Aadhar No" />
+                <TableColumn fx:id="c7" text="Category" />
+                <TableColumn fx:id="c8" text="Gender" />
+                <TableColumn fx:id="c9" text="Religion" />
+                <TableColumn fx:id="c10" text="Contact Number" />
+                <TableColumn fx:id="c11" text="House Number" />
+                <TableColumn fx:id="c12" text="Work Type" />
+                <TableColumn fx:id="c13" text="Registration Date" />
+                <TableColumn fx:id="c14" text="Registration Time" />
+            </columns>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </TableView>
+    </center>
+    <bottom>
+        <GridPane alignment="BOTTOM_CENTER">
+            <Label text="CopyRight: @SarthakSrivastav" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        </GridPane>
+    </bottom>
+
+
+</BorderPane>

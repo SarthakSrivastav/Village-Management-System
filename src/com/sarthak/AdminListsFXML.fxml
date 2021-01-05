@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+
+<DialogPane  prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.AdminListsController"
+             style="-fx-background-color:#c4d8a6">
+    <content>
+            <TableView fx:id="adminTable" layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color:#a1c171">
+              <columns>
+                <TableColumn fx:id="c1" minWidth="-1.0" prefWidth="46.66665554046631" text="ID" />
+                <TableColumn fx:id="c2" minWidth="-Infinity" prefWidth="142.66665172576904" text="First Name" />
+                <TableColumn fx:id="c3" minWidth="-1.0" prefWidth="142.66665172576904" text="Last Name" />
+                <TableColumn fx:id="c4" minWidth="-1.0" prefWidth="46.66665554046631" text="Age" />
+                <TableColumn fx:id="c5" minWidth="-1.0" prefWidth="142.66665172576904" text="Contact Number" />
+                <TableColumn fx:id="c6" minWidth="-1.0" prefWidth="180.66668701171875" text="Post" />
+                <TableColumn fx:id="c7" minWidth="-1.0" prefWidth="180.66668701171875" text="Village" />
+                <TableColumn fx:id="c8" minWidth="-1.0" prefWidth="128.66668701171875" text="Date" />
+                <TableColumn fx:id="c9" minWidth="-Infinity" prefWidth="142.66665172576904" text="Time" />
+              </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+            </TableView>
+
+    </content>
+
+</DialogPane>

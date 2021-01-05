@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="homeBorderPane" style="-fx-background-color:#c9d4e8;" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.HomeClassController">
+    <top>
+            <ToolBar fx:id="TopToolBar" prefHeight="42.0" prefWidth="1356.0" style="-fx-background-color:#5d7ebb">
+                <MenuBar prefHeight="25.0" prefWidth="122.0">
+                    <Menu text="      Register       ">
+                        <MenuItem fx:id="newVillage" onAction="#checkLoginTypeForNewVillage" text="New Village" />
+                        <MenuItem fx:id="newAdmin" onAction="#checkLoginTypeForNewAdmin" text="New Admin" />
+                    </Menu>
+                </MenuBar>
+                <MenuBar prefHeight="25.0" prefWidth="122.0">
+                    <Menu text="        Add           ">
+                        <MenuItem onAction="#checkLoginTypeForHeadOfFamily" text="Head Of The Family" />
+                        <MenuItem onAction="#checkLoginTypeForFamilyMember" text="Family Members" />
+                        <MenuItem onAction="#checkLoginTypeForAddResources" text="Facts And Resources" />
+                    </Menu>
+                </MenuBar>
+                <MenuBar prefHeight="25.0" prefWidth="122.0">
+                    <Menu text="     Remove      ">
+                        <MenuItem fx:id="removeAdmin" onAction="#checkLoginTypeForRemoveAdmin" text="Admin" />
+                        <MenuItem onAction="#checkLoginTypeForRemoveVillager" text="Village  Member's" />
+                    </Menu>
+                </MenuBar>
+                <MenuBar prefHeight="25.0" prefWidth="122.0">
+                    <Menu text="   Show Lists      ">
+                        <MenuItem onAction="#handleAllRedisteredVillages" text="All Registered Villages On This Portal" />
+                        <MenuItem onAction="#showAllDetails" text="All Villager's And Admin's Details" />
+                    </Menu>
+
+                </MenuBar>
+                <MenuBar prefHeight="25.0" prefWidth="122.0">
+                    <Menu text="    Search       ">
+                        <MenuItem onAction="#handleSearchPersons" text="About Villager's" />
+                    </Menu>
+                </MenuBar>
+                <MenuBar prefHeight="25.0" prefWidth="122.0">
+                    <Menu text="Find Your Village">
+                        <MenuItem onAction="#handleShowResources" text="All Resources" />
+                    </Menu>
+                </MenuBar>
+
+                <MenuBar prefHeight="25.0" prefWidth="122.0">
+                    <Menu text="    Portfolio      ">
+                        <MenuItem onAction="#myPortfolio" text="My Portfolio" />
+                    </Menu>
+                </MenuBar>
+
+                <MenuBar prefHeight="25.0" prefWidth="122.0">
+                    <Menu text="    Education      ">
+                        <MenuItem onAction="#myQualifications" text="My Qualification" />
+                    </Menu>
+            <padding>
+               <Insets left="15.0" />
+            </padding>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+                </MenuBar>
+
+                <TextField fx:id="search" alignment="CENTER" promptText="search">
+            <font>
+               <Font name="Constantia Bold" size="13.0" />
+            </font>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets></TextField>
+                <Button fx:id="click" alignment="CENTER" onAction="#openGoogle" onMouseEntered="#enterSubmit" onMouseExited="#exitsubmit" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #005580;" text="search" textFill="WHITE">
+            <font>
+               <Font name="Constantia Bold" size="13.0" />
+            </font></Button>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+            </ToolBar>
+    </top>
+    <left>
+        <VBox fx:id="leftVbox" prefHeight="500.0" prefWidth="240.0" spacing="15.0">
+
+                <Button fx:id="leftB1" alignment="CENTER" lineSpacing="10.0" onAction="#villages" prefHeight="90.0" prefWidth="190.0" text="Total Registered Villages" textFill="#f9fffe" underline="true" wrapText="true">
+                    <tooltip>
+                        <Tooltip text="Click to know total registered villages on this portal..!" />
+                    </tooltip>
+            <font>
+               <Font name="Constantia Bold" size="17.0" />
+            </font></Button>
+
+            <Button fx:id="leftB2" lineSpacing="10.0" onAction="#admin" prefHeight="90.0" prefWidth="190.0" text="Total Registered Admins" textFill="#f9fffe" underline="true" wrapText="true">
+                <tooltip>
+                    <Tooltip text="Click to know total registered admins on this portal..!" />
+                </tooltip>
+                <font>
+                    <Font name="Constantia Bold" size="17.0" />
+                </font></Button>
+
+            <Button fx:id="leftB3" lineSpacing="10.0" onAction="#totalPopulation" prefHeight="90.0" prefWidth="190.0" text="Total Population Of Village" textFill="#f9fffe" underline="true" wrapText="true">
+                <tooltip>
+                    <Tooltip text="Click to know total population of village..!" />
+                </tooltip>
+                <font>
+                    <Font name="Constantia Bold" size="17.0" />
+                </font></Button>
+
+                <Button fx:id="leftB4" alignment="CENTER" lineSpacing="10.0" onAction="#male" prefHeight="90.0" prefWidth="190.0" text="Total Male Population" textFill="#f9fffe" underline="true" wrapText="true">
+                    <tooltip>
+                        <Tooltip text="Click to know about total male population..!" />
+                    </tooltip>
+            <font>
+                <Font name="Constantia Bold" size="17.0" />
+            </font></Button>
+
+         <padding>
+            <Insets left="40.0" right="10.0" top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets left="10.0" right="10.0" top="20.0" />
+         </BorderPane.margin>
+        </VBox>
+    </left>
+
+    <right>
+        <VBox prefHeight="500.0" prefWidth="240.0" spacing="15.0">
+            <Button fx:id="rightB1" lineSpacing="10.0" onAction="#populationBelowEighteenYears" prefHeight="90.0" prefWidth="190.0" text="Population Below or Equal To 18 yr's" textFill="#f9fffe" underline="true" wrapText="true">
+                <tooltip>
+                    <Tooltip text="Click to know total population below or equal to 18 yr's..!" />
+                </tooltip>
+                <font>
+                    <Font name="Constantia Bold" size="17.0" />
+                </font></Button>
+
+            <Button fx:id="rightB2" lineSpacing="10.0" onAction="#populationAboveEighteenYears" prefHeight="90.0" prefWidth="190.0" text="Population Above 18 yr's" textFill="#f9fffe" underline="true" wrapText="true">
+                <tooltip>
+                    <Tooltip text="Click to know total population above 18 yr's..!" />
+                </tooltip>
+                <font>
+                    <Font name="Constantia Bold" size="17.0" />
+                </font></Button>
+
+            <Button fx:id="rightB3" lineSpacing="10.0" onAction="#working" prefHeight="90.0" prefWidth="190.0" text="Working Population" textFill="#f9fffe" underline="true" wrapText="true">
+                <tooltip>
+                    <Tooltip text="Click to know about total working population...!" />
+                </tooltip>
+                <font>
+                    <Font name="Constantia Bold" size="17.0" />
+                </font></Button>
+
+            <Button fx:id="rightB4" onAction="#nonWorking" prefHeight="90.0" prefWidth="190.0" text="Non-Working Population" textFill="#f9fffe" underline="true" wrapText="true">
+                <tooltip>
+                    <Tooltip text="Click to know about total non-working population...!" />
+                </tooltip>
+                <font>
+                    <Font name="Constantia Bold" size="17.0" />
+                </font></Button>
+         <BorderPane.margin>
+            <Insets left="10.0" right="10.0" top="20.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="40.0" top="10.0" />
+         </padding>
+        </VBox>
+    </right>
+    <center>
+        <BorderPane style="-fx-border-color: black; -fx-border-radius: 50;" BorderPane.alignment="CENTER">
+            <top>
+                <HBox alignment="CENTER_LEFT" spacing="100.0">
+                    <TextField fx:id="post" alignment="CENTER" prefHeight="68.0" prefWidth="312.0" promptText="post_office_name"> <!-- style="-fx-background-color:#94b8b8">-->
+                  <font>
+                     <Font name="MV Boli" size="27.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="TEXT" />
+                  </cursor></TextField>
+                   <TextField fx:id="village" alignment="CENTER" prefHeight="68.0" prefWidth="312.0" promptText="village_name"> <!-- style="-fx-background-color:#94b8b8">-->
+                  <font>
+                     <Font name="MV Boli" size="27.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="TEXT" />
+                  </cursor></TextField>
+                    <BorderPane.margin>
+                        <Insets bottom="47.0" left="50.0" right="10.0" top="30.0" />
+                    </BorderPane.margin>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </HBox>
+            </top>
+            <center>
+                <VBox alignment="TOP_CENTER" prefHeight="359.0" prefWidth="357.0" spacing="10.0" BorderPane.alignment="TOP_CENTER">
+                    <Label fx:id="l1" text="''Welcome''" textFill="#ffd3d3" wrapText="true">
+                  <font>
+                     <Font name="MV Boli" size="27.0" />
+                  </font></Label>
+                    <Label fx:id="l2" textFill="#f7cac9" wrapText="true">
+                  <font>
+                     <Font name="MV Boli" size="27.0" />
+                  </font></Label>
+               <padding>
+                  <Insets bottom="30.0" top="10.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </BorderPane.margin>
+                </VBox>
+            </center>
+            <bottom>
+                <HBox alignment="BASELINE_CENTER" prefHeight="26.0" prefWidth="804.0" BorderPane.alignment="CENTER">
+                    <Label lineSpacing="3.0" onMouseClicked="#clearWindow" prefHeight="26.0" prefWidth="203.0" text="CopyRight:©SarthakSrivastav" underline="true">
+                        <tooltip>
+                            <Tooltip text="Chick Here To Clear The Window..!" />
+                        </tooltip>
+                        <font>
+                            <Font name="Constantia" size="15.0" />
+                        </font>
+                    </Label>
+                </HBox>
+            </bottom>
+         <padding>
+            <Insets left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets bottom="45.0" left="10.0" right="10.0" top="30.0" />
+         </BorderPane.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </BorderPane>
+    </center>
+
+    <bottom>
+        <HBox prefWidth="1317.0" spacing="5.0">
+            <Button fx:id="bottomB1" lineSpacing="3.0" onAction="#female" prefHeight="90.0" prefWidth="204.0" text="Total Female Population" textFill="#f9fffe" underline="true" wrapText="true">
+                <tooltip>
+                    <Tooltip text="Click to know about total female population...!" />
+                </tooltip>
+                <font>
+                    <Font name="Constantia Bold" size="17.0" />
+                </font></Button>
+
+            <Button fx:id="bottomB2" lineSpacing="3.0" onAction="#totalHouses" prefHeight="90.0" prefWidth="205.0" text="Total Houses In Village" textFill="#f9fffe" underline="true" wrapText="true">
+                <tooltip>
+                    <Tooltip text="Click to know about total number of houses in a village...!" />
+                </tooltip>
+                <font>
+                    <Font name="Constantia Bold" size="17.0" />
+                </font></Button>
+
+            <Button fx:id="bottomB3" lineSpacing="3.0" onAction="#hindu" prefHeight="90.0" prefWidth="205.0" text="Total Hindu Population" textFill="#f9fffe" underline="true" wrapText="true">
+                <tooltip>
+                    <Tooltip text="Click to know about total hindu population...!" />
+                </tooltip>
+                <font>
+                    <Font name="Constantia Bold" size="17.0" />
+                </font></Button>
+
+            <Button fx:id="bottomB4" lineSpacing="3.0" onAction="#muslim" prefHeight="90.0" prefWidth="204.0" text="Total Muslim Population" textFill="#f9fffe" underline="true" wrapText="true">
+                <tooltip>
+                    <Tooltip text="Click to know about total muslim population...!" />
+                </tooltip>
+                <font>
+                    <Font name="Constantia Bold" size="17.0" />
+                </font></Button>
+
+            <Button fx:id="bottomB5" lineSpacing="3.0" onAction="#responsible" prefHeight="90.0" prefWidth="204.0" text="Total Responsible Population" textFill="#f9fffe" underline="true" wrapText="true">
+                <tooltip>
+                    <Tooltip text="Click to know about number of responsible person's..!" />
+                </tooltip>
+                <font>
+                    <Font name="Constantia Bold" size="17.0" />
+                </font></Button>
+
+            <Button fx:id="bottomB6" lineSpacing="3.0" onAction="#womensSafeOrNot" prefHeight="90.0" prefWidth="207.0" text="Women's Are Safe Or Not ?" textFill="#f9fffe" underline="true" wrapText="true">
+                <tooltip>
+                    <Tooltip text="Click to know that the village is safe for women's or not..!" />
+                </tooltip>
+                <font>
+                    <Font name="Constantia Bold" size="17.0" />
+                </font></Button>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="10.0" right="10.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="40.0" right="40.0" />
+         </padding>
+
+        </HBox>
+    </bottom>
+</BorderPane>

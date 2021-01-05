@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.AllRegisteredVillagesController"
+            style="-fx-background-color:#c4d8a6">
+    <content>
+        <TableView fx:id="allRegisteredVillages" layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="700.0"  style="-fx-background-color:#a1c171">
+            <columns>
+                <TableColumn fx:id="c1" minWidth="-1.0" prefWidth="136.6666669845581" text="Village" />
+                <TableColumn fx:id="c2" minWidth="-1.0" prefWidth="139.00001525878906" text="Post Office" />
+                <TableColumn fx:id="c3" minWidth="-1.0" prefWidth="116.0" text="Block" />
+                <TableColumn fx:id="c4" minWidth="-1.0" prefWidth="122.66665649414062" text="Distric" />
+                <TableColumn fx:id="c5" minWidth="-Infinity" prefWidth="142.66665172576904" text="State" />
+                <TableColumn fx:id="c6" minWidth="-Infinity" prefWidth="142.66665172576904" text="Country" />
+                <TableColumn fx:id="c7" minWidth="-Infinity" prefWidth="142.66665172576904" text="Gram Pradhan" />
+                <TableColumn fx:id="c8" minWidth="-Infinity" prefWidth="142.66665172576904" text="Pincode" />
+                <TableColumn fx:id="c9" minWidth="-Infinity" prefWidth="142.66665172576904" text="Registration Date" />
+                <TableColumn fx:id="c10" minWidth="-Infinity" prefWidth="142.66665172576904" text="Registration Time" />
+            </columns>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </TableView>
+    </content>
+</DialogPane>

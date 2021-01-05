@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane style="-fx-background-color:#98b4d4" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.AddNewVillageController">
+    <content>
+        <GridPane alignment="CENTER" hgap="10" style=" -fx-font-size: 15" vgap="10">
+
+            <Label text="Enter Owner's ID: " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="oid" alignment="CENTER" prefHeight="31.0" prefWidth="310.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Enter Owner's Password: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <PasswordField fx:id="opass" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Enter Country Name: " GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="country" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label text="Enter State Name: " GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <TextField fx:id="state" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            <Label text="Enter District Name:  " GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <TextField fx:id="district" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+            <Label text="Enter Block Name: " GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <TextField fx:id="block" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+            <Label text="Enter Post Office Name: " GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <TextField fx:id="post" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+            <Label text="Enter Village Name: " GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <TextField fx:id="village" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+            <Label text="Enter Gram Pradhan Name: " GridPane.columnIndex="0" GridPane.rowIndex="8" />
+            <TextField fx:id="pradhan" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+
+            <Label text="Enter Pin Code:" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+            <TextField fx:id="pincode" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+
+            <Button fx:id="submit" onAction="#handleAddNewVillage" onMouseEntered="#enterSubmit" onMouseExited="#exitsubmit" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color:#4b7cb4" text="Submit" textFill="BLACK" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+
+        </GridPane>
+    </content>
+
+</DialogPane>

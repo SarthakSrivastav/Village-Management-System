@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<DialogPane style="-fx-background-color:#98b4d4" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.HeadOfFamilyController">
+    <content>
+        <BorderPane>
+            <left>
+                <GridPane alignment="CENTER" hgap="10" style=" -fx-font-size: 15" vgap="10">
+
+                    <Label text="Enter Post Office Name: " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <TextField fx:id="postOffice" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                    </TextField>
+
+                    <Label text="Enter Village Name: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <TextField fx:id="village" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                    <Label text="Enter Name Of Family Head:  " GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                    <TextField fx:id="headName" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                    <Label text="Enter Father Name: " GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                    <TextField fx:id="fname" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                    <Label text="Enter Mother Name: " GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                    <TextField fx:id="mname" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                    <Label text="Enter Phone No:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                    <TextField fx:id="phno" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+
+                    <Label text="Enter Aadhar No: " GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                    <TextField fx:id="aadhar" alignment="CENTER" prefHeight="31.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+                    <Button fx:id="submit" onAction="#handleHeadOfTheFamily" onMouseEntered="#enterSubmit" onMouseExited="#exitsubmit" style="-fx-background-color:#4b7cb4" text="Submit" textFill="BLACK" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                    <CheckBox fx:id="responsible" text="Is This Person Is The Responsible One ?" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                </GridPane>
+            </left>
+            <center>
+                <GridPane alignment="CENTER" hgap="10" style=" -fx-font-size: 15" vgap="10">
+                    <Label text="              " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                </GridPane>
+            </center>
+
+            <right>
+                <GridPane alignment="CENTER" hgap="10" style=" -fx-font-size: 15" vgap="10">
+                    <Label text="Enter Category: " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <ComboBox fx:id="category" editable="true" prefHeight="31.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="general" />
+                                <String fx:value="sc" />
+                                <String fx:value="st" />
+                                <String fx:value="obc" />
+                                <String fx:value="ex-servicemen" />
+                                <String fx:value="physically_handicapped" />
+                                <String fx:value="others" />
+                            </FXCollections>
+                        </items>
+                        <value>
+                            <String fx:value="general" />
+                        </value>
+                    </ComboBox>
+
+                    <Label text="Select Gender: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <ComboBox fx:id="gender" prefHeight="31.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="male" />
+                                <String fx:value="female" />
+                                <String fx:value="others" />
+                            </FXCollections>
+                        </items>
+                        <value>
+                            <String fx:value="male" />
+                        </value>
+                    </ComboBox>
+
+                    <Label text="Enter Religion: " GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                    <ComboBox fx:id="religion" editable="true" prefHeight="31.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="hindu" />
+                                <String fx:value="muslim" />
+                                <String fx:value="sikh" />
+                                <String fx:value="eesaee" />
+                                <String fx:value="jain" />
+                                <String fx:value="buddh" />
+                            </FXCollections>
+                        </items>
+                        <value>
+                            <String fx:value="hindu" />
+                        </value>
+                    </ComboBox>
+
+                    <Label text="Enter Age: " GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                    <Spinner fx:id="age" editable="true" initialValue="18" max="150" min="0" prefHeight="31.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+
+                    <Label text="Enter House No:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                    <TextField fx:id="hno" alignment="CENTER" prefHeight="31.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                    <Label text="Enter Profession:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                    <ComboBox fx:id="wt" editable="true" prefHeight="31.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="farmer" />
+                                <String fx:value="labour" />
+                                <String fx:value="advocate" />
+                                <String fx:value="engineer" />
+                                <String fx:value="student" />
+                                <String fx:value="work_in_government_sector" />
+                                <String fx:value="work_in_private_sector" />
+                                <String fx:value="unemployee" />
+                            </FXCollections>
+                        </items>
+                        <value>
+                            <String fx:value="farmer" />
+                        </value>
+                    </ComboBox>
+
+                    <Label text="Enter Date Of Birth:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                    <DatePicker fx:id="dob" prefHeight="31.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+                    <Label text="                   " GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                </GridPane>
+            </right>
+            <bottom>
+                <GridPane alignment="BOTTOM_CENTER" hgap="10">
+                    <Label text="               " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <Label prefHeight="21.0" prefWidth="213.0" text="CopyRight:©SarthakSrivastav" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                  <font>
+                     <Font name="Constantia Bold" size="15.0" />
+                  </font></Label>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </BorderPane.margin>
+                </GridPane>
+            </bottom>
+        </BorderPane>
+    </content>
+
+
+</DialogPane>

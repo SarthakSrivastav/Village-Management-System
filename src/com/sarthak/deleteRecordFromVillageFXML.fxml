@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:#cdb398" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.DeleteRecordFromVillageController">
+
+    <top>
+        <FlowPane alignment="CENTER" hgap="10" style=" -fx-font-size: 15; -fx-background-color:#674d32" vgap="10">
+
+            <Label text="Post Office: " textFill="WHITE">
+            <font>
+               <Font name="Constantia Bold" size="17.0" />
+            </font></Label>
+            <TextField fx:id="post" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" />
+
+            <Label text="Village: " textFill="WHITE" >
+                <font>
+                    <Font name="Constantia Bold" size="17.0" />
+                </font>
+            </Label>
+            <TextField fx:id="village" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" />
+
+            <Label text="Enter Aadhar Number: " textFill="WHITE" >
+                <font>
+                    <Font name="Constantia Bold" size="17.0" />
+                </font>
+            </Label>
+            <TextField fx:id="aadhar" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" />
+
+            <Label text="Enter New Head Name: " textFill="WHITE">
+                <font>
+                    <Font name="Constantia Bold" size="17.0" />
+                </font>
+            </Label>
+            <TextField fx:id="newHead" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" />
+
+            <Button fx:id="remove" onAction="#handleSearch" onMouseEntered="#enterSubmit" onMouseExited="#exitsubmit" style="-fx-background-color:#ff8566" text="Remove" textFill="WHITE" />
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="5.0" right="5.0" top="20.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="20.0" top="20.0" />
+         </padding>
+
+        </FlowPane>
+    </top>
+    <center>
+        <Label text="Data Is Comming From Whole Village..." />
+        <TableView fx:id="showRearchResult" layoutX="14.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color:#785b3a" tableMenuButtonVisible="true">
+            <columns>
+                <TableColumn fx:id="c1" text="Name" />
+                <TableColumn fx:id="c2" text="Father Name" />
+                <TableColumn fx:id="c3" text="Mother Name" />
+                <TableColumn fx:id="c4" text="Age" />
+                <TableColumn fx:id="c5" text="Date Of Birth" />
+                <TableColumn fx:id="c6" text="Aadhar No" />
+                <TableColumn fx:id="c7" text="Category" />
+                <TableColumn fx:id="c8" text="Gender" />
+                <TableColumn fx:id="c9" text="Religion" />
+                <TableColumn fx:id="c10" text="Contact Number" />
+                <TableColumn fx:id="c11" text="House Number" />
+                <TableColumn fx:id="c12" text="Work Type" />
+                <TableColumn fx:id="c13" text="Registration Date" />
+                <TableColumn fx:id="c14" text="Registration Time" />
+            </columns>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </TableView>
+    </center>
+    <bottom>
+        <TableView fx:id="showFamily" layoutX="14.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="302.0" prefWidth="600.0" style="-fx-background-color:#bd9b75" tableMenuButtonVisible="true">
+
+            <columns>
+                <TableColumn fx:id="c15" text="Name" />
+                <TableColumn fx:id="c16" text="Father Name" />
+                <TableColumn fx:id="c17" text="Mother Name" />
+                <TableColumn fx:id="c18" text="Age" />
+                <TableColumn fx:id="c19" text="Date Of Birth" />
+                <TableColumn fx:id="c20" text="Aadhar No" />
+                <TableColumn fx:id="c21" text="Category" />
+                <TableColumn fx:id="c22" text="Gender" />
+                <TableColumn fx:id="c23" text="Religion" />
+                <TableColumn fx:id="c24" text="Contact Number" />
+                <TableColumn fx:id="c25" text="House Number" />
+                <TableColumn fx:id="c26" text="Work Type" />
+                <TableColumn fx:id="c27" text="Registration Date" />
+                <TableColumn fx:id="c28" text="Registration Time" />
+            </columns>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </TableView>
+    </bottom>
+
+</BorderPane>

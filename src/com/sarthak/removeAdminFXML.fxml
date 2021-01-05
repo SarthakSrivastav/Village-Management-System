@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<DialogPane style="-fx-background-color:#ffb3b3" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.RemoveAdminFXMLController">
+    <content>
+        <GridPane alignment="CENTER" hgap="10" style=" -fx-font-size: 15" vgap="10">
+            <Label text="Enter Owner's ID: " GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <font>
+               <Font size="20.0" />
+            </font></Label>
+            <TextField fx:id="oidToRemove" alignment="CENTER" prefHeight="31.0" prefWidth="270.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Enter Owner's Password: " GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <font>
+               <Font size="20.0" />
+            </font></Label>
+            <PasswordField fx:id="opassToRemove" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Enter Admin's ID Which You Want To Remove: " GridPane.columnIndex="0" GridPane.rowIndex="2">
+            <font>
+               <Font size="20.0" />
+            </font></Label>
+            <TextField fx:id="idToRemove" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label text="Enter Admin's Password Which You are Going To Remove: " GridPane.columnIndex="0" GridPane.rowIndex="3">
+            <font>
+               <Font size="20.0" />
+            </font></Label>
+            <PasswordField fx:id="passToRemove" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            <Button fx:id="remove" onAction="#handleRemoveAdmin" onMouseEntered="#enterSubmit" onMouseExited="#exitsubmit" style="-fx-background-color:#ff6666" text="Remove" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <HBox alignment="CENTER" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                <Label text="CopyRight:©SarthakSrivastav">
+               <font>
+                  <Font name="Constantia Bold" size="12.0" />
+               </font></Label>
+            </HBox>
+        </GridPane>
+    </content>
+</DialogPane>

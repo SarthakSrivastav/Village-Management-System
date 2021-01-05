@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="allAboutVillagersBorderPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:#adc982" stylesheets="@../../formStyleSheet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.AllAboutVillagersController">
+    <top>
+        <FlowPane fx:id="topFlow" hgap="30.0" style="-fx-background-color:#adc982" vgap="10.0">
+            <Button fx:id="b1" onAction="#handleShowAdminList" prefHeight="80.0" prefWidth="215.0" text="All Admin's" textFill="WHITE" underline="true" wrapText="true">
+                <font>
+                    <Font name="Constantia Bold" size="18.0" />
+                </font>
+            </Button>
+
+            <Button fx:id="b2" onAction="#getAllVillagers" prefHeight="80.0" prefWidth="215.0" text="Complete Village" textFill="WHITE" underline="true" wrapText="true">
+                <font>
+                    <Font name="Constantia Bold" size="20.0" />
+                </font>
+            </Button>
+            <Button fx:id="b3" onAction="#getHead" prefHeight="80.0" prefWidth="215.0" text="Only Main Member's" textFill="WHITE" underline="true" wrapText="true">
+                <font>
+                    <Font name="Constantia Bold" size="19.0" />
+                </font>
+            </Button>
+            <Button fx:id="b4" onAction="#handleAllHeadOfFamiliesRecords" prefHeight="80.0" prefWidth="215.0" text="Only Families" textFill="WHITE" underline="true" wrapText="true">
+                <font>
+                    <Font name="Constantia Bold" size="20.0" />
+                </font>
+            </Button>
+            <Button fx:id="b5" onAction="#handleShowResponsiblePersons" prefHeight="80.0" prefWidth="215.0" text="Responsible Person's" textFill="WHITE" underline="true" wrapText="true">
+                <font>
+                    <Font name="Constantia Bold" size="20.0" />
+                </font>
+            </Button>
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="40.0" right="30.0" top="20.0" />
+            </BorderPane.margin>
+        </FlowPane>
+    </top>
+    <center>
+        <BorderPane>
+            <center>
+                <TableView fx:id="allAboutVillageTable" layoutX="14.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color:#9b2335" tableMenuButtonVisible="true">
+                    <columns>
+                        <TableColumn fx:id="c1" text="Name" />
+                        <TableColumn fx:id="c2" text="Father Name" />
+                        <TableColumn fx:id="c3" text="Mother Name" />
+                        <TableColumn fx:id="c4" text="Age" />
+                        <TableColumn fx:id="c5" text="Date Of Birth" />
+                        <TableColumn fx:id="c6" text="Aadhar No" />
+                        <TableColumn fx:id="c7" text="Category" />
+                        <TableColumn fx:id="c8" text="Gender" />
+                        <TableColumn fx:id="c9" text="Religion" />
+                        <TableColumn fx:id="c10" text="Contact Number" />
+                        <TableColumn fx:id="c11" text="House Number" />
+                        <TableColumn fx:id="c12" text="Work Type" />
+                        <TableColumn fx:id="c13" text="Registration Date" />
+                        <TableColumn fx:id="c14" text="Registration Time" />
+                    </columns>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </TableView>
+            </center>
+            <bottom>
+                <FlowPane fx:id="centerFlow" hgap="10" style="-fx-background-color:#e15d44" vgap="10" BorderPane.alignment="TOP_CENTER">
+                    <Label text="Post Office: ">
+                        <font>
+                            <Font name="Gabriola" size="20.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="postOffice" alignment="CENTER" prefHeight="40.0" prefWidth="217.0" promptText="enter_post_pffice_name">
+                        <font>
+                            <Font name="Georgia Bold" size="15.0" />
+                        </font>
+                    </TextField>
+
+                    <Label text="Village: ">
+                        <font>
+                            <Font name="Gabriola" size="20.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="village" alignment="CENTER" prefHeight="40.0" prefWidth="217.0" promptText="enter_village_name">
+                        <font>
+                            <Font name="Georgia Bold" size="15.0" />
+                        </font>
+                    </TextField>
+
+                    <Label text="Head Of Family:  ">
+                        <font>
+                            <Font name="Gabriola" size="20.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="headName" alignment="CENTER" prefHeight="40.0" prefWidth="217.0" promptText="enter_name_of_family_head">
+                        <font>
+                            <Font name="Georgia Bold" size="15.0" />
+                        </font>
+                    </TextField>
+
+                    <Label text="House No: ">
+                        <font>
+                            <Font name="Gabriola" size="20.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="hno" alignment="CENTER" prefHeight="40.0" prefWidth="217.0" promptText="enter_house_no">
+                        <font>
+                            <Font name="Georgia Bold" size="15.0" />
+                        </font>
+                    </TextField>
+                    <BorderPane.margin>
+                        <Insets />
+                    </BorderPane.margin>
+                    <padding>
+                        <Insets bottom="10.0" left="15.0" right="10.0" top="10.0" />
+                    </padding>
+                </FlowPane>
+            </bottom>
+
+        </BorderPane>
+    </center>
+
+</BorderPane>

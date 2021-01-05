@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<DialogPane style="-fx-background-color:#98b4d4" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.familyMembersController">
+    <content>
+        <BorderPane>
+            <top>
+                <GridPane alignment="TOP_LEFT" hgap="15" style=" -fx-font-size: 15" vgap="10">
+
+                    <Label text="Post Office: " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <TextField fx:id="postOffice" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                    <Label text="Village: " GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                    <TextField fx:id="village" alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+
+                    <Label text="Head Of Family:  " GridPane.columnIndex="4" GridPane.rowIndex="0" />
+                    <TextField fx:id="headName" alignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+
+                    <Label text="House No: " GridPane.columnIndex="6" GridPane.rowIndex="0" />
+                    <TextField fx:id="hno" alignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+                    <Label text="                      " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+               <columnConstraints>
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+                </GridPane>
+
+            </top>
+            <center>
+                <GridPane alignment="CENTER" hgap="10" style=" -fx-font-size: 15" vgap="5">
+
+                    <Label text="Enter Name Of Family Member: " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <TextField fx:id="name" alignment="CENTER" prefHeight="31.0" prefWidth="313.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                    <Label text="Enter Father Name: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <TextField fx:id="fname" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                    <Label text="Enter Mother Name: " GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                    <TextField fx:id="mname" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                    <Label text="Enter Your Age: " GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                    <Spinner fx:id="age" editable="true" initialValue="18" max="150" min="0" prefHeight="31.0" prefWidth="315.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                    <Label text="Enter Date Of Birth:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                    <DatePicker fx:id="dob" prefHeight="31.0" prefWidth="315.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                    <Label text="Enter Gender: " GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                    <ComboBox fx:id="gender" prefHeight="31.0" prefWidth="315.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="male" />
+                                <String fx:value="female" />
+                                <String fx:value="others" />
+                            </FXCollections>
+                        </items>
+                        <value>
+                            <String fx:value="male" />
+                        </value>
+                    </ComboBox>
+
+                    <Label text="Enter Aadhar No: " GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                    <TextField fx:id="aadhar" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+
+                    <Label text="Enter Phone No:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                    <TextField fx:id="phno" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+                    <Label text="Enter Profession:" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+                    <ComboBox fx:id="wt" editable="true" prefHeight="31.0" prefWidth="316.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="farmer" />
+                                <String fx:value="labour" />
+                                <String fx:value="advocate" />
+                                <String fx:value="engineer" />
+                                <String fx:value="student" />
+                                <String fx:value="work_in_government_sector" />
+                                <String fx:value="work_in_private_sector" />
+                                <String fx:value="unemployee" />
+                            </FXCollections>
+                        </items>
+                        <value>
+                            <String fx:value="farmer" />
+                        </value>
+                    </ComboBox>
+
+                    <Button fx:id="submit" onAction="#handleFamilyMembers" onMouseEntered="#enterSubmit" onMouseExited="#exitsubmit" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color:#4b7cb4" text="Submit" textFill="BLACK" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+                    <CheckBox fx:id="responsible" text="Is This Person Is The Responsible One ?" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                </GridPane>
+            </center>
+
+            <bottom>
+                <GridPane alignment="BOTTOM_CENTER" vgap="10">
+                    <Label text="CopyRight:©SarthakSrivastav" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                  <font>
+                     <Font name="Constantia Bold" size="15.0" />
+                  </font></Label>
+                </GridPane>
+            </bottom>
+        </BorderPane>
+    </content>
+
+
+</DialogPane>

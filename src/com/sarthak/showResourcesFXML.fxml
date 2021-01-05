@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<DialogPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color:#b38e65" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.showResourcesController">
+<content>
+    <BorderPane>
+        <top>
+            <FlowPane fx:id="topFlow" hgap="10" vgap="10.0">
+                <Label prefHeight="40.0" prefWidth="199.0" text="Enter Post Office Name:" textFill="WHITE">
+                    <font>
+                        <Font name="Constantia Bold" size="17.0" />
+                    </font></Label>
+                <TextField fx:id="post" alignment="CENTER" prefHeight="40.0" prefWidth="200.0" promptText="enter_post_office_name">
+                  <font>
+                     <Font name="Constantia Bold" size="17.0" />
+                  </font></TextField>
+
+                <Label prefHeight="40.0" prefWidth="163.0" text="Enter Village Name:" textFill="WHITE">
+                    <font>
+                        <Font name="Constantia Bold" size="17.0" />
+                    </font></Label>
+                <TextField fx:id="villa" alignment="CENTER" prefHeight="40.0" prefWidth="200.0" promptText="enter_village_name">
+                  <font>
+                      <Font name="Constantia Bold" size="17.0" />
+                  </font></TextField>
+
+                <Button id="b" fx:id="submit" onAction="#showResources" onMouseEntered="#enterSubmit" onMouseExited="#exitsubmit" prefHeight="38.0" prefWidth="163.0" style="-fx-background-color:#564129" text="Show Resources" textFill="WHITE">
+                  <font>
+                      <Font name="Constantia Bold" size="17.0" />
+                  </font></Button>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="2.0" right="2.0" top="10.0" />
+               </padding>
+            </FlowPane>
+        </top>
+        <center>
+            <TableView fx:id="resourceTable" layoutX="14.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color:#c5a887" tableMenuButtonVisible="true">
+                <columns>
+                    <TableColumn fx:id="c1" text="Nearest Police Station" />
+                    <TableColumn fx:id="c2" text="Police Contact No." />
+                    <TableColumn fx:id="c3" text="Women Helpline No." />
+                    <TableColumn fx:id="c4" text="Play School" />
+                    <TableColumn fx:id="c5" text="Primary School" />
+                    <TableColumn fx:id="c6" text="High School" />
+                    <TableColumn fx:id="c7" text="Inter College" />
+                    <TableColumn fx:id="c8" text="Hospital" />
+                    <TableColumn fx:id="c9" text="Anganwadi" />
+                    <TableColumn fx:id="c10" text="Water Supply" />
+                    <TableColumn fx:id="c11" text="Food Supply" />
+                    <TableColumn fx:id="c12" text="Safe For Women's or Not ?" />
+                    <TableColumn fx:id="c13" text="This Data Saved On" />
+                </columns>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </TableView>
+        </center>
+        <bottom>
+            <GridPane alignment="BOTTOM_CENTER" hgap="10" vgap="20">
+                <Label text="CopyRight:©SarthakSrivastav" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                  <font>
+                     <Font name="Constantia Bold" size="13.0" />
+                  </font></Label>
+            </GridPane>
+        </bottom>
+
+    </BorderPane>
+</content>
+</DialogPane>

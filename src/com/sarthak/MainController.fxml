@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane style="-fx-background-color:#c9d4e8" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.Controller">
+
+    <top>
+        <Label text="Welcome To Village Management System" underline="true">
+         <font>
+            <Font name="Courier New Bold" size="50.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="100.0" left="100.0" top="20.0" />
+         </BorderPane.margin></Label>
+    </top>
+    <center>
+        <BorderPane>
+            <top>
+                <FlowPane>
+                    <Label text="Login:          ">
+                  <font>
+                     <Font name="Impact" size="40.0" />
+                  </font></Label>
+                    <RadioButton fx:id="r1" onMouseClicked="#selectButtonOne" text=" As Owner   ">
+                  <font>
+                     <Font name="Constantia Bold Italic" size="33.0" />
+                  </font>
+                  <toggleGroup>
+                     <ToggleGroup fx:id="radioGroup" />
+                  </toggleGroup></RadioButton>
+                    <RadioButton fx:id="r2" onMouseClicked="#selectButtonTwo" text=" As Admin    " toggleGroup="$radioGroup">
+                  <font>
+                     <Font name="Constantia Bold Italic" size="32.0" />
+                  </font></RadioButton>
+                    <RadioButton fx:id="r3" onMouseClicked="#selectButtonThree" text=" As General    " toggleGroup="$radioGroup">
+                  <font>
+                     <Font name="Constantia Bold Italic" size="32.0" />
+                  </font></RadioButton>
+               <BorderPane.margin>
+                  <Insets left="200.0" />
+               </BorderPane.margin>
+                </FlowPane>
+            </top>
+            <center>
+                <GridPane alignment="CENTER" hgap="10" vgap="20">
+                    <VBox spacing="20.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                        <Label text="Enter ID: " underline="true">
+                     <font>
+                        <Font name="Leelawadee UI Bold" size="25.0" />
+                     </font></Label>
+                        <Label text="Enter Password: " underline="true">
+                     <font>
+                        <Font name="Leelawadee UI Bold" size="25.0" />
+                     </font></Label>
+                        <Label text="Enter Post:" underline="true">
+                     <font>
+                        <Font name="Leelawadee UI Bold" size="25.0" />
+                     </font></Label>
+                        <Label text="Enter VIllage" underline="true">
+                     <font>
+                        <Font name="Leelawadee UI Bold" size="25.0" />
+                     </font></Label>
+                  <padding>
+                     <Insets right="20.0" />
+                  </padding>
+                    </VBox>
+                    <VBox spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                        <TextField fx:id="id" alignment="CENTER" prefHeight="44.0" prefWidth="324.0" promptText="12-digits">
+                     <font>
+                        <Font name="Leelawadee UI Bold" size="20.0" />
+                     </font></TextField>
+                        <PasswordField fx:id="pass" alignment="CENTER" promptText="password">
+                     <font>
+                        <Font name="Leelawadee UI Bold" size="20.0" />
+                     </font></PasswordField>
+                        <TextField fx:id="post" alignment="CENTER" promptText="post office name">
+                     <font>
+                        <Font name="Leelawadee UI Bold" size="20.0" />
+                     </font></TextField>
+                        <TextField fx:id="village" alignment="CENTER" promptText="village office name">
+                     <font>
+                        <Font name="Leelawadee UI Bold" size="20.0" />
+                     </font></TextField>
+                    </VBox>
+                    <Button fx:id="login" onAction="#handleLogin" onMouseEntered="#enterLogin" onMouseExited="#exitLogin" prefHeight="20.0" prefWidth="549.0" style="-fx-background-color:#6f8cc3" text="Login" textFill="WHITE" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                  <font>
+                     <Font name="Constantia" size="18.0" />
+                  </font></Button>
+               <columnConstraints>
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+                </GridPane>
+            </center>
+            <bottom>
+                <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="1181.0" spacing="110.0">
+                    <Label prefHeight="40.0" prefWidth="410.0" style="-fx-background-color:#2d436c" text="Dronacharya College Of Engineering" textFill="WHITE" underline="true">
+                  <padding>
+                     <Insets bottom="3.0" left="20.0" right="20.0" top="3.0" />
+                  </padding>
+                  <font>
+                     <Font name="Constantia" size="23.0" />
+                  </font></Label>
+                    <Label prefHeight="25.0" prefWidth="224.0" text="CopyRight:©SarthakSrivastav" textFill="BLACK" underline="true">
+                  <font>
+                     <Font name="MV Boli" size="14.0" />
+                  </font></Label>
+                    <Label prefHeight="35.0" prefWidth="397.0" style="-fx-background-color:#2d436c" text="Developed By: Sarthak Srivastav" textFill="WHITE" underline="true">
+                  <font>
+                     <Font name="Constantia" size="24.0" />
+                  </font>
+                  <padding>
+                     <Insets bottom="3.0" left="20.0" right="10.0" top="3.0" />
+                  </padding>
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin></Label>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="20.0" right="15.0" top="20.0" />
+               </BorderPane.margin>
+                </HBox>
+            </bottom>
+        </BorderPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<DialogPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color:#b38e65" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.ShowResponsiblePersonsController">
+    <content>
+        <BorderPane>
+            <top>
+                <FlowPane fx:id="topFlow" hgap="10" vgap="1.0" BorderPane.alignment="CENTER">
+                    <Label prefHeight="40.0" prefWidth="209.0" text="Enter Post Office Name:" textFill="WHITE">
+                  <font>
+                     <Font name="Georgia Bold" size="15.0" />
+                  </font></Label>
+                    <TextField fx:id="post" alignment="CENTER" prefHeight="40.0" prefWidth="200.0" promptText="enter_post_office_name">
+                  <font>
+                     <Font name="Georgia Bold" size="15.0" />
+                  </font></TextField>
+
+                    <Label prefHeight="40.0" prefWidth="183.0" text="Enter Village Name:" textFill="WHITE">
+                  <font>
+                     <Font name="Georgia Bold" size="15.0" />
+                  </font></Label>
+                    <TextField fx:id="villa" alignment="CENTER" prefHeight="40.0" prefWidth="200.0" promptText="enter_village_name">
+                  <font>
+                     <Font name="Georgia Bold" size="15.0" />
+                  </font></TextField>
+
+                    <Button id="b" fx:id="submit" onAction="#handleShowResponsiblePersons" onMouseEntered="#enterSubmit" onMouseExited="#exitsubmit" prefHeight="35.0" prefWidth="138.0" style="-fx-background-color:#564129" text="Show List" textFill="WHITE">
+                  <font>
+                     <Font name="Georgia Bold" size="15.0" />
+                  </font></Button>
+                    <Label text="                                                      " />
+               <BorderPane.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+                </FlowPane>
+            </top>
+            <center>
+                <TableView fx:id="responsiblePeople" layoutX="14.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color:#c5a887" tableMenuButtonVisible="true">
+                    <columns>
+                        <TableColumn fx:id="c1" text="Name" />
+                        <TableColumn fx:id="c2" text="Profession" />
+                        <TableColumn fx:id="c3" text="House Number" />
+                        <TableColumn fx:id="c4" text="Phone Number" />
+                    </columns>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </TableView>
+            </center>
+            <bottom>
+                <GridPane alignment="BOTTOM_CENTER" hgap="10" vgap="20">
+                    <Label prefHeight="14.0" prefWidth="182.0" text="CopyRight:©SarthakSrivastav" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                  <font>
+                     <Font name="Constantia Bold" size="12.0" />
+                  </font></Label>
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+                </GridPane>
+            </bottom>
+
+        </BorderPane>
+    </content>
+
+</DialogPane>

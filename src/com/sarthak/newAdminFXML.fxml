@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane fx:id="registerDialog" style="-fx-background-color:#98b4d4" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.NewAdminController">
+    <content>
+        <GridPane alignment="CENTER" hgap="10" style=" -fx-font-size: 15" vgap="10">
+            <Label text="Enter Owner's ID: " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="oid" alignment="CENTER" prefHeight="31.0" prefWidth="324.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Enter Owner's Password: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <PasswordField fx:id="opass" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Enter New Village Admin First Name: " GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="fname" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label text="Enter New Village Admin Last Name: " GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <TextField fx:id="lname" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            <Label text="Enter Aadhar Number Of New Admin: " GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <TextField fx:id="aadhar" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+            <Label text="Enter Age: " GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <Spinner fx:id="age" editable="true" initialValue="18" max="100" min="0" prefHeight="31.0" prefWidth="324.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+            <Label text="Enter New Admin's Phone Number: " GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <TextField fx:id="pno" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+            <Label text="Enter Post Office Name Of New Admin's: " GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <TextField fx:id="post" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+            <Label text="Enter Village Name Of New Admin's: " GridPane.columnIndex="0" GridPane.rowIndex="8" />
+            <TextField fx:id="village" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+
+            <Label text="Enter New Password: " GridPane.columnIndex="0" GridPane.rowIndex="9" />
+            <PasswordField fx:id="pass" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+
+            <Label text="Confirm Password: " GridPane.columnIndex="0" GridPane.rowIndex="10" />
+            <PasswordField fx:id="confirmpass" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+
+            <Button fx:id="submit" onAction="#handleNewAdminRecord" onMouseEntered="#enterSubmit" onMouseExited="#exitsubmit" style="-fx-background-color:#4b7cb4" text="Submit" textFill="BLACK" GridPane.columnIndex="0" GridPane.rowIndex="12" />
+        </GridPane>
+    </content>
+
+</DialogPane>
