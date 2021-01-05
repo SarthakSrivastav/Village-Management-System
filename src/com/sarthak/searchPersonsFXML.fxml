@@ -5,7 +5,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-
 <BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:#c18d8b" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.SearchPersonsController">
     <top>
         <FlowPane fx:id="centerFlow" hgap="10" style="-fx-background-color:#955251" vgap="10" BorderPane.alignment="TOP_CENTER">

@@ -13,7 +13,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 public class showResourcesController extends Main{
     @FXML
     private Button submit;

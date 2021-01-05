@@ -15,6 +15,7 @@ public class AddResourcesController extends Main{
     @FXML
     private CheckBox c1,c2,c3,c4,c5,c6,c7,c8,c9;
     @FXML
+
     private Button save;
     @FXML
     public void getPrePostAndVillage(String post,String village){

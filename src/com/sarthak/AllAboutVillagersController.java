@@ -15,7 +15,6 @@ import javafx.scene.layout.FlowPane;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 public class AllAboutVillagersController extends Main{
     String PostName,VillageName,HeadName,HouseNo;
     String clickedButton;

@@ -9,7 +9,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Optional;
-
 public class familyMembersController extends Main{
     static String finamepostName;
     static String finalvillageName;

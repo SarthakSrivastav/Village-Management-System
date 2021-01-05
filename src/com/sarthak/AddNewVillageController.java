@@ -14,7 +14,6 @@ public class AddNewVillageController extends Main {
     private TextField country, state, district, block, post, village, pradhan, pincode, oid, opass;
     @FXML
     private Button submit;
-
     @FXML
     public void initialize() {
         oid.setPromptText("owner's id");

@@ -2,7 +2,6 @@
 
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
-
 <DialogPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.AllRegisteredVillagesController"
             style="-fx-background-color:#c4d8a6">
     <content>

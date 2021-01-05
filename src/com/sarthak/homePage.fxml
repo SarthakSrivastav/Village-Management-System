@@ -5,7 +5,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-
 <BorderPane fx:id="homeBorderPane" style="-fx-background-color:#c9d4e8;" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.HomeClassController">
     <top>
             <ToolBar fx:id="TopToolBar" prefHeight="42.0" prefWidth="1356.0" style="-fx-background-color:#5d7ebb">

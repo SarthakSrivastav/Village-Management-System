@@ -2,7 +2,6 @@ package com.sarthak;
 
 public class Featch_AllAboutVillagersDetails {
     private String name,father_name,mother_name,age,dob,aadhar_no,category,gender,religion,ph_no,house_no,work_type,date,time;
-
     public Featch_AllAboutVillagersDetails(String name, String father_name, String mother_name, String age, String dob, String aadhar_no, String category, String gender, String religion, String ph_no, String house_no, String work_type, String date, String time) {
         this.name = name;
         this.father_name = father_name;

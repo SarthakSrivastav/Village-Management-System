@@ -19,7 +19,6 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 public class HomeClassController extends Main {
     static int loginAsOwner;
     static int loginAsAdmin;

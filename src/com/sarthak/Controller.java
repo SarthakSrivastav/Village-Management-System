@@ -27,7 +27,6 @@ public class Controller extends Main {
     @FXML
     public void initialize() {
     }
-
     @FXML
     public  void selectButtonOne() {
         id.setDisable(false);

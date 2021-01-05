@@ -475,7 +475,6 @@ public class SearchPersonsController extends Main{
                                 common.alertMessage("warning", "Incomplete", "Please Enter Head Of Family Name And The House Number Before Moving To Next..!");
                             }
                             else {
-//                                TODO
                                 if (common.isLower(headName)){
                                     ResultSet checkHeadAndHouse=st.executeQuery("select name,house_no from "+enteredVillage+"_head_of_family;");
                                     int headFound=0;
@@ -616,7 +615,6 @@ public class SearchPersonsController extends Main{
 
                             }
                         }
-//                        TODO
                         else common.alertMessage("warning", "Not Selected", "Please Choose Where You Want To Search Data.. At The Bottom Left..!");
 
                     }

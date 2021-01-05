@@ -5,7 +5,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-
 <BorderPane fx:id="allAboutVillagersBorderPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:#adc982" stylesheets="@../../formStyleSheet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.AllAboutVillagersController">
     <top>
         <FlowPane fx:id="topFlow" hgap="30.0" style="-fx-background-color:#adc982" vgap="10.0">

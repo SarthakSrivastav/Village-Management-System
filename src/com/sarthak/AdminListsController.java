@@ -14,7 +14,6 @@ public class AdminListsController extends Main{
     private TableView<Featch_AdminInformation> adminTable;
     @FXML
     private TableColumn<Featch_AdminInformation,String> c1,c2,c3,c4,c5,c6,c7,c8,c9;
-
     ObservableList<Featch_AdminInformation> oblist= FXCollections.observableArrayList();
 
     @FXML

@@ -8,7 +8,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Optional;
-
 public class NewAdminController extends Main {
     @FXML
     private TextField oid, fname, lname, pno, aadhar, post, village;

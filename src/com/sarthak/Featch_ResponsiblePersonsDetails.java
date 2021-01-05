@@ -1,5 +1,4 @@
 package com.sarthak;
-
 public class Featch_ResponsiblePersonsDetails {
     private String name,phone_no,house_no,profession;
 

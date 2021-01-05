@@ -13,7 +13,6 @@ public class Featch_AdminInformation {
         this.date = date;
         this.time = time;
     }
-
     public String getId() {
         return id;
     }

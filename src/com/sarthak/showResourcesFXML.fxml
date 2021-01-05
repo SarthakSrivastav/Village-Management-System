@@ -5,7 +5,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-
 <DialogPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color:#b38e65" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sarthak.showResourcesController">
 <content>
     <BorderPane>

@@ -9,7 +9,6 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 public class AllRegisteredVillagesController extends Main{
     @FXML
     private TableView<Featch_AllRegisteredVillages> allRegisteredVillages;

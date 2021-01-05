@@ -15,7 +15,6 @@ public class Featch_AllRegisteredVillages {
         this.date = date;
         this.time = time;
     }
-
     public String getCountry() {
         return Country;
     }

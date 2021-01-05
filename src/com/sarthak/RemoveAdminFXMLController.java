@@ -9,7 +9,6 @@ import javafx.scene.control.TextField;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
 public class RemoveAdminFXMLController extends Main{
     @FXML
     private TextField oidToRemove,idToRemove;

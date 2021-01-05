@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Optional;
-
 public class HeadOfFamilyController extends Main {
     static String finalPost;
     static String finalVillage;

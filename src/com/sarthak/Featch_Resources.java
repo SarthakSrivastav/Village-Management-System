@@ -2,7 +2,6 @@ package com.sarthak;
 public class Featch_Resources {
     private String police_station_name,police_contact_no,women_helpline_no,play_school,primary_school,high_school,inter_college,
             hospital,anganwadi,water_supply,food_supply,safe_for_womens_or_not,date_of_submission;
-
     public Featch_Resources(String police_station_name, String police_contact_no, String women_helpline_no, String play_school, String primary_school, String high_school, String inter_college, String hospital, String anganwadi, String water_supply, String food_supply, String safe_for_womens_or_not, String date_of_submission) {
         this.police_station_name = police_station_name;
         this.police_contact_no = police_contact_no;

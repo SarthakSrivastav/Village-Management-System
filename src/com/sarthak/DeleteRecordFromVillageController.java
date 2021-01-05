@@ -9,7 +9,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Optional;
-
 public class DeleteRecordFromVillageController extends Main{
     static String finalPost;
     static String finalVillage;

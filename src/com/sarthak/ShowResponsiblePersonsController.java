@@ -11,7 +11,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 public class ShowResponsiblePersonsController extends Main{
     @FXML
     private TableView<Featch_ResponsiblePersonsDetails> responsiblePeople;
