@@ -26,4 +26,4 @@ So, order to resolve this issue I develope an application which will store all t
 * Various types of search mechanism (you can search in this application on various conditions like: search by name/father name/ mother name/ age(<,>,=)/ID/gender/religion/category/profession etc
 * Resources section (in this section you can easily find out about all the resources of any village just by only one click).
 * Go to my Linkedin account for more info link:  (https://www.linkedin.com/in/sarthak-srivastav-6277711a8/)
-*Also watch this pdf(https://github.com/SarthakSrivastav/Village-Management-System/blob/master/Village%20Management%20System%20By%20Sarthak%20Srivastav.pdf) file associated with this repo for more clarity.
+* Also watch this pdf(https://github.com/SarthakSrivastav/Village-Management-System/blob/master/Village%20Management%20System%20By%20Sarthak%20Srivastav.pdf) file associated with this repo for more clarity.
