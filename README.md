@@ -12,7 +12,7 @@
 
 ## Project info
 This project is mainly focused on the area where storage of large amount of data  is required, and to handle such a huge amount of data in the traditional way was very tedious thing. the employee who kept all these data was always frustrated and he always makes silly mistakes which was a very serious issue.
-So, order to resolve this issue I develope an application which will store all the huge amount of data in a single chick with full security and easy to access. also to reduce extra burden and dependencies on humans.
+So, In order to resolve this issue I develop an application which will store all the huge amount of data in a single chick with full security and easy to access, also it reduces extra burden and dependencies on humans.
 ## Features Of Application
 * To show relevent data to the relevent user
 * Three types of login mechanism
