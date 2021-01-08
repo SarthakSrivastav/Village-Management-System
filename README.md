@@ -11,8 +11,7 @@
 * IntelliJ IDEA
 
 ## Project info
-This project is mainly focused on the area where storage of large amount of data  is required, and to handle such a huge amount of data in the traditional way was very tedious thing. the employee who kept all these data was always frustrated and he always makes silly mistakes which was a very serious issue.
-So, In order to resolve this issue I develop an application which will store all the huge amount of data in a single chick with full security and easy to access, also it reduces extra burden and dependencies on humans.
+This project is mainly focused on the area where storage of huge amount of data is required, and to handle such a huge data in the traditional way was very tedious thing. The employee who maintain all these data was always frustrated and he always makes silly mistakes which was a very serious issue. So, In order to resolve these issue I develop an application which will store all the information regarding a village in a very constructive manner, so that everyone can fetch all the details regarding any particular person/family/village/villages-resources/village responsible persons and many more details about villagers in a single click.
 ## Features Of Application
 * To show relevent data to the relevent user
 * Three types of login mechanism
