@@ -2,8 +2,6 @@
 
 ## Technologies Used
 * Java
-* JavaFx
-* JavaFx Look And Feel Library
 * JDBC (Java To Database Connectivity)
 * Database(MySQL)
 
