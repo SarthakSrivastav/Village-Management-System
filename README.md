@@ -2,6 +2,7 @@
 
 ## Technologies Used
 * Java
+* JavaFx
 * JDBC (Java To Database Connectivity)
 * Database(MySQL)
 
